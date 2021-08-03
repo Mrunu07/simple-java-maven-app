@@ -3,7 +3,7 @@ pipeline {
     parameters {
     string(defaultValue: "Test" ,description:"Which environment to deploy ?",name:"deployenv")
     choice(choices:["EU-WEST-2A","EU-WEST-2B","EU-WEST-2C"],description:"Select which az to deploy to",name:"deployaz")
-    booleanParam(defaultValue:"false",description"Start deployment",name:"deploycheck")
+    booleanParam(defaultValue:"false",description:"Start deployment",name:"deploycheck")
 
     }
     stages{
